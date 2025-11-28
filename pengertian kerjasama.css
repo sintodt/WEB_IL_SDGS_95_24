@@ -1,0 +1,127 @@
+:root {
+    --cream: #ffca6f;
+    --soft-orange: #F4C07A;
+    --burnt-orange: #D77A42;
+    --terracotta: #C8643B;
+    --brown: #7A4A2E;
+    --beige: #F9E3C7;
+}
+
+body {
+    background: var(--cream);
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+/* HEADER */
+.header img {
+    width: 100%;
+}
+
+
+.top-bar {
+    background: var(--soft-orange);
+    padding: 15px 40px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    font-family: yay;
+}
+
+@font-face {
+    font-family: yay;
+    src: url(Happy\ School.ttf);
+}
+
+.back-btn {
+    background: #fff8e7;
+    padding: 10px 18px;
+    border-radius: 12px;
+    border: 2px solid var(--burnt-orange);
+    text-decoration: none;
+    color: var(--brown);
+    transition: 0.3s;
+    font-weight: 600;
+}
+
+.back-btn:hover {
+    background: #ffe1bd;
+}
+
+
+.container {
+    width: 85%;
+    margin: auto;
+    padding: 40px 0;
+}
+
+
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 45px;
+    gap: 30px;
+}
+
+.section.left {
+    flex-direction: row;
+}
+
+.section.right {
+    flex-direction: row-reverse;
+}
+
+
+.text-box {
+    background: var(--beige);
+    padding: 25px;
+    border-radius: 18px;
+    border: 2px solid var(--burnt-orange);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.13);
+    flex: 1;
+    text-align: justify;
+}
+
+.text-box h2 {
+    font-family: jn;
+    font-size: 26px;
+    color: var(--terracotta);
+    margin-top: 0;
+}
+
+@font-face {
+    font-family: jn;
+    src: url(Hashi-Regular.otf);
+}
+
+.text-box p {
+    color: #4d2e1b;
+}
+
+/* GAMBAR */
+.section img {
+    width: 40%;
+    border-radius: 18px;
+    border: 2px solid var(--brown);
+}
+
+/* HOVER IMAGE */
+.img-hover {
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.img-hover:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .section {
+        flex-direction: column !important;
+    }
+
+    .section img {
+        width: 100%;
+    }
+}

@@ -1,0 +1,179 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #fff2d6, #f8d7a8, #eeb782);
+    color: #5a3600;
+}
+
+
+.header img {
+    width: 100%;
+    display: block;
+}
+
+/* ==== TOP BAR ==== */
+.top-bar {
+    background: #e49c53;
+    padding: 15px 25px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.2);
+    font-family: woop;
+}
+@font-face {
+    font-family: woop;
+    src: url(Happy\ School.ttf);
+}
+.back-btn {
+    background: #fff4d6;
+    padding: 10px 20px;
+    border-radius: 12px;
+    border: 2px solid #d88a40;
+    text-decoration: none;
+    color: #5a3600;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.back-btn:hover {
+    background: #ffe9bf;
+}
+
+
+.section {
+    background: #fff7e5;
+    width: 85%;
+    margin: 40px auto;
+    display: flex;
+    gap: 30px;
+    padding: 40px;
+    border-radius: 25px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.18);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+}
+
+.section img {
+    width: 300px;
+    border-radius: 15px;
+}
+
+.section img:hover {
+    transform: scale(1.06);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.25);
+}
+
+.text-box h2 {
+    color: #b46100;
+    font-size: 32px;
+    margin-bottom: 15px;
+    font-family: "yay";
+}
+@font-face {
+    font-family: yay;
+    src: url(Hashi-Regular.otf);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 22px;
+    width: 85%;
+    margin: 40px auto 60px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container h3 {
+    color: #6C3428;
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-family: "poop";
+}
+@font-face {
+    font-family: poop;
+    src: url(Yellow\ Cat.otf);
+}
+
+/* ==== CARD STYLE ==== */
+
+.card1 {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 18px;
+    border-left: 6px solid #A5B68D;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.12);
+    transition: 0.25s;
+    text-align: justify;
+}
+
+.card2 {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 18px;
+    border-left: 6px solid #A27B5C;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.12);
+    transition: 0.25s;
+    text-align: justify;
+}
+
+.card3 {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 18px;
+    border-left: 6px solid #FFB4A2;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.12);
+    transition: 0.25s;
+    text-align: justify;
+}
+
+.card1:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 22px rgba(0,0,0,0.18);
+}
+
+.card2:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 22px rgba(0,0,0,0.18);
+}
+
+.card3:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 22px rgba(0,0,0,0.18);
+}
+.card h3 {
+    margin-top: 0;
+    font-weight: bold;
+    color: #FAB12F;
+}
+
+/* ==== GRID SIZES ==== */
+.wide {
+    grid-column: span 12; /* FULL width biar rapi */
+}
+
+.medium {
+    grid-column: span 6; /* 2 kolom */
+}
+
+.small {
+    grid-column: span 4; /* 3 kolom */
+}
+
+@media (max-width: 900px) {
+    .wide, .medium, .small {
+        grid-column: span 12 !important;
+    }
+}
+
+
+
+@media (max-width: 850px) {
+    .section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .container div {
+        grid-column: span 12 !important;
+    }
+}

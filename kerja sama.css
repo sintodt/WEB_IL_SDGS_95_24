@@ -1,0 +1,170 @@
+
+:root {
+    --cream: #ffca6f;
+    --soft-orange: #F4C07A;
+    --burnt-orange: #D77A42;
+    --terracotta: #C8643B;
+    --brown: #7A4A2E;
+    --light-terracotta: #F3D2A8;
+}
+
+body {
+    background: var(--cream);
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+.header img {
+    width: 100%;
+    height: auto;
+}
+
+
+.top-bar {
+    background: var(--soft-orange);
+    padding: 15px 40px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    font-family: yay;
+}
+@font-face {
+    font-family: yay;
+    src: url(Happy\ School.ttf);
+}
+.back-btn {
+    color: var(--brown);
+    text-decoration: none;
+    padding: 10px 18px;
+    font-weight: 600;
+    background: #fff5dd;
+    border-radius: 12px;
+    border: 2px solid var(--burnt-orange);
+    transition: 0.3s;
+}
+
+.back-btn:hover {
+    background: #ffe8c2;
+}
+
+
+.container {
+    width: 90%;
+    margin: auto;
+    padding: 40px 0;
+}
+
+.dual-box {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 50px;
+}
+
+
+.box {
+    flex: 1;
+    background: var(--light-terracotta);
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.13);
+    text-align: justify;
+    border: 2px solid var(--burnt-orange);
+}
+
+.box h2 {
+    color: #E67E22;
+    font-size: 25px;
+    margin-top: 0;
+    font-family: jn;
+}
+
+@font-face {
+    font-family: jn;
+    src: url(Hashi-Regular.otf);
+}
+
+.box p{
+    color: #37220f;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.box li{
+    color: #37220f;
+    font-family: gyat;
+}
+@font-face {
+    font-family: gyat;
+    src: url(Yellow\ Cat.otf);
+}
+/* IMAGE UNDER TEXT */
+.box img {
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 15px;
+}
+
+.multilateral-box {
+    background: var(--terracotta);
+    padding: 35px;
+    border-radius: 22px;
+    color: white;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+}
+
+.multilateral-box .text {
+    flex: 3;
+    text-align: justify;
+}
+
+
+.multilateral-box h2 {
+    margin-top: 0;
+    font-size: 24px;
+    font-family: wiup;
+    color:#F3D2A8;
+}
+@font-face {
+    font-family: wiup;
+    src: url(JandaManateeSolid.ttf);
+}
+
+.multilateral-box p{
+    color: #37220f;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+
+.multilateral-box .img-wrapper img {
+    width: 300px;
+    border-radius: 18px;
+}
+
+/* ---------------- Hover Effect ---------------- */
+.img-hover {
+    transition: 0.35s ease;
+}
+
+.img-hover:hover {
+    transform: scale(1.06);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.25);
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+@media (max-width: 900px) {
+    .dual-box {
+        flex-direction: column;
+    }
+    
+    .multilateral-box {
+        flex-direction: column;
+        text-align: justify;
+    }
+
+    .multilateral-box .img-wrapper img {
+        width: 100%;
+    }
+}
