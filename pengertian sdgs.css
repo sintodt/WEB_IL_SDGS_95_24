@@ -84,7 +84,7 @@ body {
 }
 
 .container h3 {
-    color: #6C3428;
+    color: #884A39;
     font-size: 20px;
     margin-bottom: 15px;
     font-family: "poop";
@@ -94,86 +94,84 @@ body {
     src: url(Yellow\ Cat.otf);
 }
 
-/* ==== CARD STYLE ==== */
-
-.card1 {
-    background: #ffffff;
+/* ===== CONTAINER UNTUK GRID ===== */
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 4 per baris */
+    gap: 50px;
+    width: 90%;
+    margin: 50px auto;
+}
+/* ===== SDG CARD KOTAK ===== */
+.sdg-card {
+    position: relative;
+    width: 300px;
+    height: 300px;
     padding: 20px;
     border-radius: 18px;
-    border-left: 6px solid #A5B68D;
-    box-shadow: 0 5px 18px rgba(0,0,0,0.12);
-    transition: 0.25s;
-    text-align: justify;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+    color: white;
+    transition: .3s ease;
 }
 
-.card2 {
-    background: #ffffff;
-    padding: 20px;
-    border-radius: 18px;
-    border-left: 6px solid #A27B5C;
-    box-shadow: 0 5px 18px rgba(0,0,0,0.12);
-    transition: 0.25s;
-    text-align: justify;
+/* GAMBAR DALAM KOTAK */
+.sdg-card .sdg-img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;     /* BIAR GA GEPENG */
+    object-position: center;
+    z-index: 1;
+    transition: .4s ease;
 }
 
-.card3 {
-    background: #ffffff;
-    padding: 20px;
-    border-radius: 18px;
-    border-left: 6px solid #FFB4A2;
-    box-shadow: 0 5px 18px rgba(0,0,0,0.12);
-    transition: 0.25s;
-    text-align: justify;
+/* overlay warna */
+.overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    transition: .4s ease;
 }
 
-.card1:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 22px rgba(0,0,0,0.18);
+/* TEXT */
+.sdg-card h3,
+.sdg-card p {
+    position: relative;
+    z-index: 5;
+    margin: 0;
+    opacity: 0;
+    transform: translateY(15px);
+    transition: .4s ease;
 }
 
-.card2:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 22px rgba(0,0,0,0.18);
+.sdg-card h3 {
+    font-size: 25px;
+    margin-bottom: 6px;
 }
 
-.card3:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 22px rgba(0,0,0,0.18);
-}
-.card h3 {
-    margin-top: 0;
-    font-weight: bold;
-    color: #FAB12F;
+.sdg-card p {
+    font-size: 15px;
+    line-height: 1.4;
 }
 
-/* ==== GRID SIZES ==== */
-.wide {
-    grid-column: span 12; /* FULL width biar rapi */
+/* HOVER */
+.sdg-card:hover .sdg-img {
+    filter: brightness(40%) saturate(1.2);
+    transform: scale(1.08);
 }
 
-.medium {
-    grid-column: span 6; /* 2 kolom */
+.sdg-card:hover .overlay {
+    background: rgba(255, 255, 255, 0.58);
 }
 
-.small {
-    grid-column: span 4; /* 3 kolom */
-}
-
-@media (max-width: 900px) {
-    .wide, .medium, .small {
-        grid-column: span 12 !important;
-    }
-}
-
-
-
-@media (max-width: 850px) {
-    .section {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .container div {
-        grid-column: span 12 !important;
-    }
+.sdg-card:hover h3,
+.sdg-card:hover p {
+    opacity: 1;
+    transform: translateY(0);
 }

@@ -89,6 +89,11 @@ body {
     color: #4d2e1b;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
+.dual-box {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 50px;
+}
 
 .daftar-pustaka {
     background: #F7D08A;

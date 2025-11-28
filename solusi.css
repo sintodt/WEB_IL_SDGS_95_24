@@ -1,0 +1,103 @@
+:root {
+    --cream: #ffca6f;
+    --soft-orange: #ffa32c;
+    --burnt-orange: #D77A42;
+    --terracotta: #C8643B;
+    --brown: #7A4A2E;
+    --beige: #F9E3C7;
+}
+
+body {
+    background: var(--cream);
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+/* HEADER */
+.header img {
+    width: 100%;
+}
+
+
+.top-bar {
+    background: var(--soft-orange);
+    padding: 15px 40px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    font-family: wohoo;
+}
+
+@font-face {
+    font-family: wohoo;
+    src: url(Happy\ School.ttf);
+}
+
+.back-btn {
+    background: #fff8e7;
+    padding: 10px 18px;
+    border-radius: 12px;
+    border: 2px solid var(--burnt-orange);
+    text-decoration: none;
+    color: var(--brown);
+    transition: 0.3s;
+    font-weight: 600;
+}
+
+.back-btn:hover {
+    background: #ffe1bd;
+}
+
+.solusi-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 40px 20px;
+    background: #F5C676; /* warm autumn */
+}
+
+/* BOX TENGAH */
+.solusi-box {
+    width: 55%;
+    background: #F7E2B5;
+    padding: 25px 30px;
+    border-radius: 20px;
+    border: 3px solid #D6844E;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    text-align: justify;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: #7A4A2E;
+}
+
+.solusi-box h2 {
+    text-align: center;
+    color: #C7652B;
+    margin-bottom: 10px;
+    font-family: shibal;
+}
+@font-face {
+    font-family: shibal;
+    src: url(Hey\ Comic.otf);
+}
+
+/* KOLOM FOTO KIRI & KANAN */
+.foto-side {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.foto-side img {
+    width: 200px;
+    height: 150  0px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 3px solid #D6844E;
+    transition: .3s ease;
+}
+
+/* HOVER */
+.foto-side img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+}

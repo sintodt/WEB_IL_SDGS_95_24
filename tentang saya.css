@@ -1,0 +1,176 @@
+:root {
+    --cream: #ffca6f;
+    --soft-orange: #ffa32c;
+    --burnt-orange: #D77A42;
+    --terracotta: #C8643B;
+    --brown: #7A4A2E;
+    --beige: #F9E3C7;
+}
+
+body {
+    background: var(--cream);
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+/* HEADER */
+.header img {
+    width: 100%;
+}
+
+
+.top-bar {
+    background: var(--soft-orange);
+    padding: 15px 40px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    font-family: wohoo;
+}
+
+@font-face {
+    font-family: wohoo;
+    src: url(Happy\ School.ttf);
+}
+
+.back-btn {
+    background: #fff8e7;
+    padding: 10px 18px;
+    border-radius: 12px;
+    border: 2px solid var(--burnt-orange);
+    text-decoration: none;
+    color: var(--brown);
+    transition: 0.3s;
+    font-weight: 600;
+}
+
+.back-btn:hover {
+    background: #ffe1bd;
+}
+
+.section {
+    background: #fff7e5;
+    width: 85%;
+    margin: 40px auto;
+    display: flex;
+    gap: 30px;
+    padding: 40px;
+    border-radius: 25px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.18);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+}
+
+.section img {
+    width: 200px;
+    border-radius: 15px;
+}
+
+.section img:hover {
+    transform: scale(1.06);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.25);
+}
+
+.text-box h2 {
+    color: #b46100;
+    font-size: 32px;
+    margin-bottom: 15px;
+    font-family: "yay";
+    text-align: center;
+}
+@font-face {
+    font-family: yay;
+    src: url(Hashi-Regular.otf);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 22px;
+    width: 85%;
+    margin: 40px auto 60px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container h3 {
+    color: #884A39;
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-family: "poop";
+}
+@font-face {
+    font-family: poop;
+    src: url(Yellow\ Cat.otf);
+}
+
+/* LAYOUT UTAMA */
+.experience-section {
+    display: flex;
+    gap: 30px;
+    padding: 30px;
+    background-color: #F7C173; /* warm autumn */
+}
+
+/* KOTAK TEKS */
+.experience-text {
+    flex: 1;
+    background-color: #F3D9C2;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    font-family: 'Poppins', sans-serif;
+    color: #5A352A;
+    text-align: justify;
+}
+
+.experience-text h2 {
+    font-size: 26px;
+    text-align: center;
+    font-family: wip;
+    margin-top: 0;
+}
+
+@font-face {
+    font-family: wip;
+    src: url(Hashi-Regular.otf);
+}
+
+/* KOTAK FOTO */
+.experience-photos {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+/* FOTO */
+.experience-photos img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 18px;
+    transition: 0.3s;
+}
+
+/* HOVER FOTO */
+.experience-photos img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+/* RESPONSIVE MODE (HP) */
+@media (max-width: 800px) {
+    .experience-section {
+        flex-direction: column;
+    }
+}
+
+
+
+.footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #cc4c02;
+    color: #fff0d6;
+    margin-top: 30px;
+    
+}
